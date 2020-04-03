@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\NBody\glad.c" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
+    <ClCompile Include="LoadFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kernel.cl" />
+    <None Include="shaders\draw_bodies.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\draw_bodies.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{f9368958-182b-4369-98ad-a486f2589f88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ShaderProgram.h" />
+    <ClInclude Include="LoadFile.h" />
+  </ItemGroup>
+</Project>
